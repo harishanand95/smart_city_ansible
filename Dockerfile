@@ -14,6 +14,7 @@ RUN mkdir ~/.ssh
 RUN apt-get install -y python
 EXPOSE 22
 EXPOSE 8000
-EXPOSE 8433
-
+EXPOSE 8443
+EXPOSE 8001
+EXPOSE 8444
 CMD    ["/usr/sbin/sshd", "-D"]
